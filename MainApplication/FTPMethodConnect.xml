@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FTPMethodConnect</name>
+    </assembly>
+    <members>
+        <member name="T:FTPMethodConnect.FTP">
+            <summary>
+            Class FTP.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.host">
+            <summary>
+            Địa chỉ ftp.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.userName">
+            <summary>
+            Tên đăng nhập
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.passWord">
+            <summary>
+            Mật khẩu.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.ftpRequest">
+            <summary>
+            Yêu cầu đến FTP.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.ftpResponse">
+            <summary>
+            Phản hồi từ FTP.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.ftpStream">
+            <summary>
+            Dòng tin FTP.
+            </summary>
+        </member>
+        <member name="F:FTPMethodConnect.FTP.sizeBuffer">
+            <summary>
+            Bộ đệm.
+            </summary>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.download(System.String,System.String)">
+            <summary>
+            Tải xuống file.
+            </summary>
+            <param name="remoteFile">Remote file.</param>
+            <param name="localFile">Lhe local file.</param>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.upload(System.String,System.String)">
+            <summary>
+            Tải lên file.
+            </summary>
+            <param name="remoteFile">Remote file.</param>
+            <param name="localFile">Local file.</param>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.getSizeOfFile(System.String)">
+            <summary>
+            Lấy về độ dài file.
+            </summary>
+            <param name="remoteFile">Remote file.</param>
+            <returns>Độ dài của File.</returns>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.rename(System.String,System.String)">
+            <summary>
+            Đổi tên file.
+            </summary>
+            <param name="remoteFile">Remote file.</param>
+            <param name="newName">Tên mới</param>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.delete(System.String)">
+            <summary>
+            Xóa file.
+            </summary>
+            <param name="remoteFile">The remote file.</param>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.getContentOfFile(System.String)">
+            <summary>
+            Đọc nội dung của file.
+            </summary>
+            <param name="remoteFile">Remote file.</param>
+            <returns>Nội dung của File.</returns>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.creatDirectory(System.String)">
+            <summary>
+            Tạo thư mục.
+            </summary>
+            <param name="newDirectoryName">Tạo thư mục.</param>
+        </member>
+        <member name="M:FTPMethodConnect.FTP.getTimeModified(System.String)">
+            <summary>
+            Lần cuối sửa đồi file.
+            </summary>
+            <param name="remoteFile">Thời gian cuối sửa đổi.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MainLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:MainLibrary.Log.#cctor">
+            <summary>
+            Khởi tạo một đối tượng kiểu <see cref="T:MainLibrary.Log"/>.
+            </summary>
+        </member>
+        <member name="P:MainLibrary.Log.Console">
+            <summary>
+            Lấy về và đặt giá trị cho Console là true hoặc false.
+            </summary>
+            <value><c>true</c> if console; còn lại, <c>false</c>.</value>
+        </member>
+        <member name="P:MainLibrary.Log.Debug">
+            <summary>
+            Lấy về và đặt giá trị cho Debug là true hoặc false.
+            </summary>
+            <value><c>true</c> if debug; còn lại, <c>false</c>.</value>
+        </member>
+        <member name="P:MainLibrary.Log.Prefix">
+            <summary>
+            Lấy về và đặt nội dung cho thông điệp.
+            </summary>
+            <value>Prefix.</value>
+        </member>
+        <member name="E:MainLibrary.Log.Event">
+            <summary>
+            Tạo một sự kiện kiểu <see cref="T:MainLibrary.LogEventArgs" />.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.Log.OnEvent(System.String)">
+            <summary>
+            Xảy ra khi sự kiện Event xảy ra.
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:MainLibrary.Log.Write(System.String,System.Object[])">
+            <summary>
+            Hiển thị một định dạng xác định
+            </summary>
+            <param name="format">Format.</param>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:MainLibrary.LogEventArgs.#ctor(System.String)">
+            <summary>
+            Khởi tạo một đối tượng kiểu <see cref="T:MainLibrary.LogEventArgs"/>.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="P:MainLibrary.LogEventArgs.TimeStamp">
+            <summary>
+            Lấy về thời gian thực.
+            </summary>
+            <value>Thời gian thực.</value>
+        </member>
+        <member name="P:MainLibrary.LogEventArgs.Message">
+            <summary>
+            Lấy về thông điệp.
+            </summary>
+            <value>Thông điệp.</value>
+        </member>
+        <member name="F:MainLibrary.Manifest._data">
+            <summary>
+            Lưu trữ dữ liệu đọc được từ 1 file.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.Manifest.#ctor(System.String)">
+            <summary>
+            Khởi tạo một đối tượng kiểu <see cref="T:MainLibrary.Manifest"/>.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="P:MainLibrary.Manifest.Version">
+            <summary>
+            Lấy về số phiên bản của phần mềm.
+            </summary>
+            <value>Version của phần mềm</value>
+        </member>
+        <member name="P:MainLibrary.Manifest.TenPhanmem">
+            <summary>
+            Lấy về tên phần mềm.
+            </summary>
+            <value> Tên của phần mềm. </value>
+        </member>
+        <member name="P:MainLibrary.Manifest.NgayCapNhat">
+            <summary>
+            Lấy về ngày sửa đổi (ngày cập nhật) cuối của phần mềm.
+            </summary>
+            <value> Ngày cập nhật phần mềm.</value>
+        </member>
+        <member name="P:MainLibrary.Manifest.Function">
+            <summary>
+            Lấy về nội dung chức năng của phần mềm.
+            </summary>
+            <value> Chức năng của phần mềm.</value>
+        </member>
+        <member name="P:MainLibrary.Manifest.Author">
+            <summary>
+            Lấy về tên người phát hành phần mềm.
+            </summary>
+            <value> Người sở hữu phần mềm. </value>
+        </member>
+        <member name="P:MainLibrary.Manifest.CodeSecurity">
+            <summary>
+            Lấy về mã bảo mật của phần mềm.
+            </summary>
+            <value> Mã bảo mật </value>
+        </member>
+        <member name="P:MainLibrary.Manifest.BaseUri">
+            <summary>
+            Lấy về đường dẫn đến thư mục chứa phần mềm.
+            </summary>
+            <value> URI.</value>
+        </member>
+        <member name="P:MainLibrary.Manifest.ZipFiles">
+            <summary>
+            Tên của file.zip chứa các file của bản cập nhật mới.
+            </summary>
+            <value>file.zip</value>
+        </member>
+        <member name="M:MainLibrary.Manifest.Load(System.String)">
+            <summary>
+            Tải dữ liệu và lấy về những thông tin trên dữ liệu đó.
+            </summary>
+            <param name="data"></param>
+        </member>
+        <member name="M:MainLibrary.Manifest.Write(System.String)">
+            <summary>
+            Ghi dữ liệu vừa đọc được ra đường dẫn được truyền vào
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate.localConfigFileUri">
+            <summary>
+            Đường dẫn đến cấu hình file hiện tại được chọn.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate.nameOfFileCheck">
+            <summary>
+            Tên của file được chọn.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate.index">
+            <summary>
+            Chỉ số của file được chọn trong danh sách.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate.CheckInterval">
+            <summary>
+            Thời gian nghỉ giữa 2 lần kiểm tra.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate.flagForUpdate">
+            <summary>
+            Biến ghi nhận trạng thái Update.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate._timer">
+            <summary>
+            Thời gian thực thi chương trình.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate._updating">
+            <summary>
+            Ghi nhận quá trình kiểm tra nhập hoàn thành hay chưa.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate._localConfig">
+            <summary>
+            Đối tượng kiểu <see cref="T:MainLibrary.Manifest"/> lưu trữ thông tin của cấu hình file hiện tại.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate._remoteConfig">
+            <summary>
+            Đối tượng kiểu <see cref="T:MainLibrary.Manifest" /> lưu trữ thông tin của cấu hình file từ xa.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.ProcessUpdate._localConfigFile">
+            <summary>
+            Cấu hình file hiện tại.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.#ctor">
+            <summary>
+            Khởi tạo một đối tượng kiểu <see cref="T:MainLibrary.ProcessUpdate" />.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.#ctor(System.IO.FileInfo)">
+            <summary>
+            Khởi tạo một đối tượng kiểu <see cref="T:MainLibrary.ProcessUpdate"/>.
+            </summary>
+            <param name="configFile">The configuration file.</param>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.StartSimpleMornitoring">
+            <summary>
+             Thực thi một cách đơn giản.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.StartNormalMornitoring">
+            <summary>
+            Thực thi một cách bình thường.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.StartFullMornitoring">
+            <summary>
+            Thực thi một cách đầy đủ.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.StopMornitoring">
+            <summary>
+            Dừng lại màn hình.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.CheckSimpleUpdate(System.Object)">
+            <summary>
+            Kiểm tra cập nhật một cách đơn giản.
+            </summary>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.CheckNormalUpdate(System.Object)">
+            <summary>
+            Kiểm tra cập nhật một cách bình thường.
+            </summary>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.CheckFullUpdate(System.Object)">
+            <summary>
+            Kiểm tra cập nhật một cách đầy đủ.
+            </summary>
+            <param name="state">State.</param>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.Update">
+            <summary>
+            Cập nhật phần mềm.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.ProcessUpdate.installFile">
+            <summary>
+            Cài đặt phần mềm.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.listPathOfFile">
+            <summary>
+            Lưu trữ danh sách đường dẫn tuyệt đối đến các file.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.listNameOfFile">
+            <summary>
+            Lưu trữ danh sách tên của các file.xml . 
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.flagOfShowList">
+            <summary>
+            Kiểm tra xem phương thức showListOfFile() được thực thi.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.lengthOfListFile">
+            <summary>
+            Độ dài số lượng file trong thư mục.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.pathStore">
+            <summary>
+            Đường dẫn của thư mục lưu trữ các file.
+            </summary>
+        </member>
+        <member name="F:MainLibrary.UpdateApplication.flagOfMain">
+            <summary>
+            Kiểm tra tính đúng đắn các hàm trong class <see cref="T:MainLibrary.UpdateApplication"/>.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.UpdateApplication.showListOfFile">
+            <summary>
+            Hiển thị ra danh sách các file bên trong thư mục có đường dẫn pathStore.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.UpdateApplication.checkUpdateFile">
+            <summary>
+            Tiến hành kiểm tra phiên bản khác của file từ host để phát hiện cập nhật.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.UpdateApplication.chooseFileToCheckUpdate">
+            <summary>
+            Chọn một file từ thư mục để kiểm tra số phiên bản trên host.
+            </summary>
+        </member>
+        <member name="M:MainLibrary.UpdateApplication.Execute">
+            <summary>
+            Hàm thực thi giao diện chính của chương trình.
+            </summary>
+        </member>
+    </members>
+</doc>
