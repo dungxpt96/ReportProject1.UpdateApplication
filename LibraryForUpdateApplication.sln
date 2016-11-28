@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryForUpdateApplication", "LibraryForUpdateApplication\LibraryForUpdateApplication.csproj", "{5F946466-72B8-4C40-AA6C-8E028991E846}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainLibrary", "MainLibrary\MainLibrary.csproj", "{78397A10-9935-4AD9-9D8B-9E72745FC243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTPMethodConnect", "FTPMethodConnect\FTPMethodConnect.csproj", "{A836058A-2951-4EEA-ADCD-2F69CC16994E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5F946466-72B8-4C40-AA6C-8E028991E846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F946466-72B8-4C40-AA6C-8E028991E846}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F946466-72B8-4C40-AA6C-8E028991E846}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F946466-72B8-4C40-AA6C-8E028991E846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78397A10-9935-4AD9-9D8B-9E72745FC243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78397A10-9935-4AD9-9D8B-9E72745FC243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78397A10-9935-4AD9-9D8B-9E72745FC243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78397A10-9935-4AD9-9D8B-9E72745FC243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A836058A-2951-4EEA-ADCD-2F69CC16994E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A836058A-2951-4EEA-ADCD-2F69CC16994E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A836058A-2951-4EEA-ADCD-2F69CC16994E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A836058A-2951-4EEA-ADCD-2F69CC16994E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
